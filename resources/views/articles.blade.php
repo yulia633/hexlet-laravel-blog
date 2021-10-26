@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Laravel</title>
+        <title>Laravel | Articles</title>
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <meta name="csrf-param" content="_token" />
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -25,7 +25,8 @@
     </header>
     <body>
         <div class="container mt-4">
-            <h1>Добро пожаловать в блог!</h1>
+            <h1>Статьи</h1>
         </div>
     </body>
 </html>
+
