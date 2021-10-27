@@ -11,6 +11,9 @@
     </head>
     <body>
         <div class="container mt-4">
+            <a href="/">Главная</a>
+            <a href="/about">О Блоге</a>
+            <a href="/articles">Статьи</a>
             <h1>@yield('header')</h1>
             <div>
                 @yield('content')
