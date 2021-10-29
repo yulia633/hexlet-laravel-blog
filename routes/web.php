@@ -19,6 +19,5 @@ Route::get('/', function () {
 
 Route::get('/about', [App\Http\Controllers\PageController::class, 'about'])->name('about');
 
-Route::get('articles', function () {
-    return view('articles');
-});
+Route::get('articles', [App\Http\Controllers\ArticleController::class, 'index'])
+  ->name('articles.index');
