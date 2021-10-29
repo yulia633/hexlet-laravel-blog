@@ -21,3 +21,6 @@ Route::get('/about', [App\Http\Controllers\PageController::class, 'about'])->nam
 
 Route::get('articles', [App\Http\Controllers\ArticleController::class, 'index'])
   ->name('articles.index');
+
+  Route::get('articles/{id}', [App\Http\Controllers\ArticleController::class, 'show'])
+  ->name('articles.show');
