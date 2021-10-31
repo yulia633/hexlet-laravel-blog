@@ -30,3 +30,9 @@ Route::post('articles', [App\Http\Controllers\ArticleController::class, 'store']
 
 Route::get('articles/{id}', [App\Http\Controllers\ArticleController::class, 'show'])
     ->name('articles.show');
+
+Route::get('articles/{id}/edit', [App\Http\Controllers\ArticleController::class, 'edit'])
+    ->name('articles.edit');
+
+Route::patch('articles/{id}', [App\Http\Controllers\ArticleController::class, 'update'])
+    ->name('articles.update');
