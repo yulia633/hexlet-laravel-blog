@@ -17,9 +17,15 @@
                     <div class="card-body">
                         <h5 class="card-title">{{$eachArticle->name}}</h5>
                         <p class="card-text">{{Str::limit($eachArticle->body, 200)}}</p>
-                        <td>
-                            <a href="{{route('articles.show', $eachArticle->id)}}">Подробнее</a>
-                        </td>
+                        <tr>
+                            <td>
+                                <a href="{{route('articles.show', $eachArticle->id)}}">Подробнее</a>
+                            </td>
+                            <td>
+                                <a href="{{route('articles.destroy', $eachArticle->id)}}"
+                                data-confirm="Вы уверены?" data-method="delete">Удалить</a>
+                            </td>
+                        </tr>
                     </div>
                 </div>
             </div>
