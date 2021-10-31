@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+@include('flash::message')
 <style>
     .pagination{
         float: right;
@@ -8,8 +9,7 @@
     }
 </style>
 <div class="container-md mt-5">
-    <h1 class="text-center">Список статей</h1>
-
+<h1 class="text-center">Список статей</h1>
     <div class="row mt-5">
         @foreach($articles as $eachArticle)
             <div class="col-lg-4">
