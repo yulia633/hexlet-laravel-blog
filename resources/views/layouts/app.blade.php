@@ -14,8 +14,8 @@
         <div class="container mt-4">
             <nav>
                 <a href="/">Главная</a>
-                <a href="/about">О Блоге</a>
-                <a href="/articles">Статьи</a>
+                <a href="{{ route('about') }}">О Блоге</a>
+                <a href="{{ route('articles.index') }}">Статьи</a>
                 <a href="{{ route('articles.create') }}">Создать статью</a>
             </nav>
             <h1>@yield('header')</h1>
